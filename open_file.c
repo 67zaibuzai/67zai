@@ -58,7 +58,7 @@ int main()
     }
     i = 0;
     int rn = 0; // the aggregate row number
-    while (fgets(buffer[i++], 2048, file))
+    while (fgets(buffer[i++], 2048, file)) // get content row by row
         rn += 1;
     fclose(file);
     rn = rn - 1;
